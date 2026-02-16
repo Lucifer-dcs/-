@@ -1,9 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: maroon;
-  padding: 10px 30px;
+  padding: 12px 30px;
 }
 
 .logo-container {
@@ -17,37 +29,125 @@
 }
 
 .website-name {
-  color: white;
   font-size: 20px;
-}
-
-body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: black
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: maroon;
-  padding: 10px 30px;
+  color: white;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;    
-  margin: 0;
-  padding: 0;
+  gap: 25px;
 }
 
 .nav-links li a {
   text-decoration: none;
   color: white;
   font-weight: bold;
+  transition: 0.3s;
 }
+
 .nav-links li a:hover {
-  color: lightgray;
+  background-color: rgb(186, 46, 46);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.rules-section {
+  padding: 80px 20px;
+  background-color: black; /* tetap hitam */
+  text-align: center;
+}
+
+.rules-title {
+  font: aria-label, sans-serif;
+    font-size: 40px;
+  margin-bottom: 50px;
+  letter-spacing: 3px;
+  color: white;
+}
+
+/* CONTAINER RULES */
+.rules-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* CARD RULE */
+.rule-card {
+  background: #1a1a1a; /* dark card biar beda dari body */
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid maroon;
+  transition: 0.3s ease;
+}
+
+.rule-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px maroon;
+}
+
+.rule-card h3 {
+  margin-bottom: 10px;
+  color: #ff9999;
+}
+
+.rule-image {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.welcome-content {
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    justify-content : center;
+    min-height: 35vh;
+    zoom: 2.5;
+}
+
+.Home-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: maroon;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.join-button {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.staff-content {
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    justify-content : center;
+    min-height: 35vh;
+    zoom: 2.5;
+}
+
+.rules-content {
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    justify-content : center;
+    min-height: 35vh;
+    zoom: 2.5;
+}
+
+.about-content {
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    justify-content : center;
+    min-height: 35vh;
+    zoom: 2.5;
 }
